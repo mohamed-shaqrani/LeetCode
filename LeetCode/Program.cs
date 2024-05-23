@@ -82,5 +82,10 @@ Console.WriteLine("Hello, World!");
 //CommonChars.CommonCharsPro(["bella", "label", "roller"]);
 
 //CommonChars.CommonCharsPro(["cool", "lock", "cook"]);
-SelectionSort.SortedArrV2([5, 3, 4, 1, 2]);
-SelectionSort.SortedArrV2([34,32,10,19,17]);
+//SelectionSort.SortedArrV2([5, 3, 4, 1, 2]);
+//SelectionSort.SortedArrV2([34,32,10,19,17]);
+//IsPalindrome.IsPalindromeInt(1234567899);
+//RemoveDuplicates.RemoveDuplicatesInt([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
+//RemoveDuplicates.RemoveElement([3, 2, 2, 3],3);
+RemoveDuplicates.RemoveElement([0, 1, 2, 2, 3, 0, 4, 2]
+, 2);
