@@ -87,5 +87,6 @@ Console.WriteLine("Hello, World!");
 //IsPalindrome.IsPalindromeInt(1234567899);
 //RemoveDuplicates.RemoveDuplicatesInt([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
 //RemoveDuplicates.RemoveElement([3, 2, 2, 3],3);
-RemoveDuplicates.RemoveElement([0, 1, 2, 2, 3, 0, 4, 2]
-, 2);
+//RemoveDuplicates.RemoveElement([0, 1, 2, 2, 3, 0, 4, 2], 2);
+//LargestPerimeter.LargestPerimeterss([2, 1, 2]);
+LargestPerimeter.LargestPerimeterV2([1, 2, 1, 10]);

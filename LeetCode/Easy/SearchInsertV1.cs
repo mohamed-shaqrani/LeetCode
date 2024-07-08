@@ -43,4 +43,4 @@ internal static class SearchInsert
         return 0;
     }
 }
-}
+
