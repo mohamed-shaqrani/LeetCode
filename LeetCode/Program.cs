@@ -15,6 +15,9 @@ doubleLinkedList.Push(3);
 
 doubleLinkedList.Push(4);
 doubleLinkedList.Push(5);
-doubleLinkedList.UnShift(0);
+doubleLinkedList.Push(6);
 
+//doubleLinkedList.Set(6,100);
+doubleLinkedList.RemoveAt(2);
 doubleLinkedList.PrintList();
+
