@@ -2,6 +2,7 @@
 using LeetCode;
 using LeetCode.Algo_Course;
 using LeetCode.DS;
+using LeetCode.DS.BinarySearchTree;
 using LeetCode.DS.DoublyLinkedList;
 using LeetCode.Easy;
 using System.Collections;
@@ -28,10 +29,14 @@ Console.WriteLine("Hello, World!");
 //queue.Dequeue();
 //queue.Dequeue();
 //queue.Dequeue();
-var product  = new Product();
 //product.CollectOddValues([1, 2, 3, 4, 5]);
-var sorted = MergeAlgo.MergSort([1, 10, 50,2, 14, 99,100]);//queue.PrintList();
-foreach (var item in sorted)
-{
-    Console.WriteLine(item);
-}
+var Bst = new BinarySearchTree();
+Bst.Insert(15);
+Bst.Insert(18);
+Bst.Insert(4);
+Bst.Insert(8);
+Bst.Insert(50);
+Bst.Insert(60);
+Bst.PrintTree();
+
+

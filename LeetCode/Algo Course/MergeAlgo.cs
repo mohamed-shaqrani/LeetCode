@@ -51,6 +51,31 @@ namespace LeetCode.Algo_Course
             return MergSortHeleper(left.ToArray(), right.ToArray());
 
         }
+        //revise recursion part
+        public int Factorial(int num)//4
+        {
 
+            if (num == 0) return 1;
+            return num * Factorial(num - 1);
+            //24
+            //4 * 6;
+            //     3 * 2;
+            //         2 * 1;
+        }
+        public List<int> CollectOddValues(int[] arr)
+        {
+            var oddlist = new List<int>();
+            Helper(arr, 0, oddlist);
+            return oddlist;
+        }
+        public List<int> Helper(int[] arr, int index, List<int> oddlist)
+        {
+            if (arr.Length == index) return oddlist;
+            if (arr[index] % 2 != 0)
+                oddlist.Add(arr[index]);
+
+            Helper(arr, index + 1, oddlist);
+            return oddlist;
+        }
     }
 }
