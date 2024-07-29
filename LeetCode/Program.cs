@@ -5,6 +5,7 @@ using LeetCode.DS;
 using LeetCode.DS.BinarySearchTree;
 using LeetCode.DS.DoublyLinkedList;
 using LeetCode.Easy;
+using LeetCode.Medium;
 using System.Collections;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -30,13 +31,17 @@ Console.WriteLine("Hello, World!");
 //queue.Dequeue();
 //queue.Dequeue();
 //product.CollectOddValues([1, 2, 3, 4, 5]);
-var Bst = new BinarySearchTree();
-Bst.Insert(15);
-Bst.Insert(18);
-Bst.Insert(4);
-Bst.Insert(8);
-Bst.Insert(50);
-Bst.Insert(60);
-Bst.PrintTree();
 
+//Console.WriteLine(Anagram.IsAnagram("ac", "bb")); 
+Console.WriteLine(Anagram.IsAnagramV5("aacc", "ccac"));
+Console.WriteLine(Anagram.IsAnagramV5("ac", "bb"));
+var two = new TwoSum();
+int[] nums = [3, 2, 4]; int target = 6;
+ two.FindTwoSum(nums, target);
+var res = nums.Select((n, i) => new { number = n, index = i });
+foreach(var item in res)
+{
+    Console.WriteLine($"number:{item.number} ,Index {item.index}" );
+}
+GrouptAnagramMed.GroupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
 
