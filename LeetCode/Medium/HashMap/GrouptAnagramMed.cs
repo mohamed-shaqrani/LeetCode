@@ -5,30 +5,30 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.Medium
+namespace LeetCode.Medium.HashMap
 {
     internal class GrouptAnagramMed
     {
         public static IList<IList<string>> GroupAnagrams(string[] strs)
         {
             IList<IList<string>> list = new List<IList<string>>();
-            if (strs.Length ==0)
+            if (strs.Length == 0)
             {
                 return list;
             }
             if (strs.Length == 1)
             {
-                 list.Add(new List<string> { strs[0] });
+                list.Add(new List<string> { strs[0] });
                 return list;
             }
-            var dic = new Dictionary<string ,IList<string>>();// ["eat","tea","tan","ate","nat","bat"]
-            
+            var dic = new Dictionary<string, IList<string>>();// ["eat","tea","tan","ate","nat","bat"]
+
             foreach (var str in strs)
             {
                 string s = new string(str.Order().ToArray());
                 if (dic.ContainsKey(s))
                 {
-                    dic[s].Add(str); 
+                    dic[s].Add(str);
                 }
                 else
                 {
@@ -43,7 +43,6 @@ namespace LeetCode.Medium
             {
                 list.Add((List<string>)item);
             }
-            int z = 0;
             return list;
         }
     }
